@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 14px;
+  font-family: 'Gotham Pro';
+}
+
+.hidden {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.no-bg {
+  background: none !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.w0 {
+  width: 0 !important;
+}
+
+.w50p {
+  width: 50% !important;
+}
+
+.w100p {
+  width: 100% !important;
+}
+
+.h0 {
+  height: 0;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-stroke {
+  text-decoration: line-through;
+}
+
+.text-small {
+  font-size: 0.95rem;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.input {
+  height: 42px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  padding: 0 20px;
+}
+
+::placeholder {
+}
+
+.wrapper {
+
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #000000;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 15px;
+  border: 2px solid #000000;
+  user-select: none;
+}
