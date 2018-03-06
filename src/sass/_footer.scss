@@ -3,4 +3,77 @@ footer {
   width: 100%;
   height: 372px;
   background-color: $violet-color;
+  color: $white-color;
+  .columns {
+    .column {
+      width: 33.333333%;
+      padding-top: 64px;
+      .menu {
+        .menu-item {
+          padding-bottom: 24px;
+          a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: normal;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .copyrights {
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+      .address {
+        padding-top: 8px;
+        line-height: 1.43;
+        letter-spacing: 0.5px;
+      }
+      .footer-logo {
+        margin-right: 32px;
+      }
+      .socials {
+        margin-top: 24px;
+        .social {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background-color: $white-color;
+          color: $violet-color;
+          display: inline-block;
+          margin-right: 36px;
+          a {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            line-height: 32px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .hr {
+    margin-top: 14px;
+    opacity: 0.2;
+    border-color: $white-color;
+  }
+  .feefback {
+    margin-top: 32px;
+    color: $blue-color;
+    .btn {
+      background-color: $blue-color;
+      color: $violet-color;
+      width: 300px;
+      height: 31px;
+      border-radius: 15.5px;
+      line-height: 31px;
+      margin: 4px auto 0;
+      font-size: 0.95rem;
+    }
+  }
 }
