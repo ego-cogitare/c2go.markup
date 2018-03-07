@@ -38,4 +38,20 @@ $(document).ready(function() {
     mousewheelControl: false,
     speed: 1000
   });
+
+  var calendar = window.calendar = rome(
+    document.getElementById('date'),
+    {
+      time: false ,
+      "weekdayFormat": "min",
+      inputFormat: 'MM/DD/YYYY',
+      weekdayFormat: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      dayFormat: 'D',
+      appendTo: $('.filter-item.date').get(0)
+    }
+  );
+
+  $('#date + .fa-calendar').on('mouseup', function() {
+    setTimeout(function() { calendar.show(); }, 100);
+  });
 });
