@@ -1,19 +1,4 @@
 $(document).ready(function() {
-  // new Swiper('#home-slider-01', {
-  //   direction: 'horizontal',
-  //   slidesPerView: 1,
-  //   nextButton: $(this).find('.btn-next'),
-  //   prevButton: $(this).find('.btn-prev'),
-  //   paginationClickable: true,
-  //   autoplay: 5000,
-  //   loop: true,
-  //   spaceBetween: 0,
-  //   mousewheelControl: false,
-  //   speed: 1000
-  // });
-
-
-
   // $(window).bind('resize', function() {
   //   var width = $('body').width();
   //
@@ -29,9 +14,6 @@ $(document).ready(function() {
   new Swiper('.events-slider', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    //pagination: '.swiper-pagination',
-    //autoplayStopOnLast: true,
-    // autoplay: 4000,
     paginationClickable: true,
     loop: false,
     spaceBetween: 0,
@@ -39,19 +21,39 @@ $(document).ready(function() {
     speed: 1000
   });
 
-  var calendar = window.calendar = rome(
-    document.getElementById('date'),
-    {
-      time: false ,
-      "weekdayFormat": "min",
-      inputFormat: 'MM/DD/YYYY',
-      weekdayFormat: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-      dayFormat: 'D',
-      appendTo: $('.filter-item.date').get(0)
-    }
-  );
+  var calendar = rome(
+    document.getElementById('date'), {
+    time: false ,
+    inputFormat: 'MM/DD/YYYY',
+    weekdayFormat: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    dayFormat: 'D',
+    appendTo: $('.filter-item.date').get(0)
+  });
 
-  $('#date + .fa-calendar').on('mouseup', function() {
+  $('#date + .fa-calendar').on('click', function() {
     setTimeout(function() { calendar.show(); }, 100);
   });
+
+
+
+  var autocompleteSettings = {
+    //types: ['(cities)'],
+    componentRestrictions: {'country': 'de'},
+    language: 'de'
+  };
+
+  var $autocompleteFrom = $('#autocomplete-from').get(0);
+  var autocompleteFrom = new google.maps.places.Autocomplete($autocompleteFrom, autocompleteSettings)
+  .addListener('place_changed', function() {
+    $autocompleteFrom.blur();
+    console.log('Selected place', this.getPlace());
+  });
+
+  var $autocompleteTo = $('#autocomplete-to').get(0);
+  var autocompleteTo = new google.maps.places.Autocomplete($autocompleteTo, autocompleteSettings)
+  .addListener('place_changed', function() {
+    $autocompleteTo.blur();
+    console.log('Selected place', this.getPlace());
+  });
+
 });
