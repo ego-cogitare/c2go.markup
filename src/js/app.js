@@ -25,4 +25,17 @@ $(document).ready(function() {
   //   }
   // })
   // .trigger('resize');
+
+  new Swiper('.events-slider', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    //pagination: '.swiper-pagination',
+    //autoplayStopOnLast: true,
+    // autoplay: 4000,
+    paginationClickable: true,
+    loop: false,
+    spaceBetween: 0,
+    mousewheelControl: false,
+    speed: 1000
+  });
 });

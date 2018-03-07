@@ -1,5 +1,4 @@
 .home {
-  background-color: $blue-color;
   .cover {
     width: 100%;
     height: 25vw;
@@ -47,7 +46,39 @@
       left: calc(50% - 468px);
     }
   }
-  .events {
+  .events-wrapper {
     padding-top: 131px;
+    background: $blue-color url('../img/home/bg-01.png') no-repeat center -355px;
+    .events-section {
+      overflow: hidden;
+      padding: 0 0 50px 10px;
+      width: calc(50% + 490.5px);
+      float: right;
+      .section-title {
+        color: $violet-color;
+        font-size: 1.428rem;
+        font-weight: bold;
+        padding: 0 0 28px 5px;
+        margin: 0;
+        a {
+          text-decoration: none;
+          font-size: 1.1428rem;
+          font-weight: 500;
+          margin-right: 55px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .events {
+        white-space: nowrap;
+        &.top {
+          margin-bottom: 55px;
+          .event {
+            width: 314px;
+          }
+        }
+      }
+    }
   }
 }
