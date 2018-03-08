@@ -21,16 +21,21 @@ $(document).ready(function() {
     speed: 1000
   });
 
+
+
+  var $date = $('#date').get(0);
   var calendar = rome(
-    document.getElementById('date'), {
+    $date, {
     time: false ,
     inputFormat: 'MM/DD/YYYY',
     weekdayFormat: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     dayFormat: 'D',
-    appendTo: $('.filter-item.date').get(0)
+    appendTo: $date.parentNode
+  })
+  .on('hide', function() {
+    $date.blur();
   });
-
-  $('#date + .fa-calendar').on('click', function() {
+  $($date).next('.fa-calendar').on('click', function() {
     setTimeout(function() { calendar.show(); }, 100);
   });
 
