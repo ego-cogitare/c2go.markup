@@ -61,4 +61,10 @@ $(document).ready(function() {
     console.log('Selected place', this.getPlace());
   });
 
+
+  $('.filter-item.category').on('click', function() {
+    $(this).toggleClass('expanded')
+      //.find('.dropdown').slideToggle();
+  });
+
 });
