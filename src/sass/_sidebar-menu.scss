@@ -1,0 +1,26 @@
+.sidebar-menu {
+  .menu-item {
+    &:last-child {
+      padding-bottom: 30px;
+    }
+    a {
+      display: block;
+      padding: 10px 0 10px 12px;
+      &.active,
+      &:hover {
+        position: relative;
+        text-decoration: none;
+        &:before {
+          position: absolute;
+          content: '';
+          display: block;
+          left: 0;
+          top: 1px;
+          width: 3px;
+          height: 32px;
+          background-color: $violet-color;
+        }
+      }
+    }
+  }
+}

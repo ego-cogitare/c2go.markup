@@ -290,3 +290,16 @@ input[type="radio"] {
     }
   }
 }
+
+.sidebar {
+  width: 300px;
+  float: left;
+  .heading-2 {
+    padding-bottom: 6px;
+  }
+}
+.content {
+  width: calc(100% - 320px);
+  float: right;
+  font-size: 1.1428rem;
+}
