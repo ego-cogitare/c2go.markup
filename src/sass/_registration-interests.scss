@@ -1,0 +1,171 @@
+.registration-interests {
+  .heading-3 {
+    color: $violet-color;
+    margin-top: 87px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .text {
+    color: $violet-color;
+    text-align: center;
+    font-size: 1.07rem;
+  }
+  .sections {
+    padding: 68px 0;
+    .section {
+      padding: 5px 0 25px 0;
+      position: relative;
+      .cover {
+        background: transparent no-repeat center center/cover;
+        position: absolute;
+        width: 320px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        &:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          width: 320px;
+          height: 100%;
+        }
+      }
+      .label {
+        width: 170px;
+        height: 100px;
+        color: $white-color;
+        font-size: 1.7142rem;
+        padding: 12px 0 0 14px;
+        margin-top: -5px;
+        position: relative;
+        z-index: 1;
+        background: transparent no-repeat left top;
+      }
+      .items {
+        width: calc(100% - 170px);
+        .item {
+          overflow: hidden;
+          margin: 20px 20px 0 0;
+          float: left;
+          width: 220px;
+          height: 80px;
+          border-radius: 2px;
+          position: relative;
+          font-size: 1.4285rem;
+          color: $white-color;
+          letter-spacing: -0.2px;
+          .picture {
+            filter: blur(1px);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent no-repeat center center/cover;
+            transition: all 0.4s 0.0s;
+            .overlay {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0.4;
+              transition: all 0.4s 0.0s;
+            }
+          }
+          label {
+            width: 100%;
+            height: 100%;
+            line-height: 84px;
+            padding-left: 16px;
+            z-index: 2;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            &:before {
+              background-image: url('../img/interests/checkbox-unchecked.png');
+              width: 36px;
+              height: 36px;
+              right: 12px;
+              top: 23px;
+              left: auto;
+            }
+            &:hover {
+              text-shadow: 1px 1px 5px $black-color;
+              + .picture {
+                filter: none;
+                .overlay {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+          input[type="checkbox"]:checked {
+            + label {
+              text-shadow: 1px 1px 5px $black-color;
+              &:before {
+                background-image: url('../img/interests/checkbox-checked.png');
+              }
+              + .picture {
+                filter: none;
+                .overlay {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.cinema {
+        background-color: $red-color;
+        .cover:before {
+          background: linear-gradient(to right, transparent , $red-color);
+        }
+        .label {
+          background-image: url('../img/interests/cinema-label.png');
+        }
+        .overlay {
+          background-color: $red-color;
+        }
+      }
+      &.journey {
+        background-color: $green-color;
+        .cover:before {
+          background: linear-gradient(to right, transparent , $green-color);
+        }
+        .label {
+          background-image: url('../img/interests/journey-label.png');
+        }
+        .overlay {
+          background-color: $green-color;
+        }
+      }
+      &.sport {
+        background-color: $brown-color;
+        .cover:before {
+          background: linear-gradient(to right, transparent , $brown-color);
+        }
+        .label {
+          background-image: url('../img/interests/sport-label.png');
+        }
+        .overlay {
+          background-color: $brown-color;
+        }
+      }
+      &.misc {
+        background-color: $orrange-color;
+        .cover:before {
+          background: linear-gradient(to right, transparent , $orrange-color);
+        }
+        .label {
+          background-image: url('../img/interests/misc-label.png');
+        }
+        .overlay {
+          background-color: $orrange-color;
+        }
+      }
+    }
+  }
+}

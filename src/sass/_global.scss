@@ -136,6 +136,15 @@ html {
   letter-spacing: -0.3px;
 }
 
+.heading-3 {
+  font-size: 1.714rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: -0.3px;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -241,24 +250,43 @@ a {
   }
 }
 
-input[type="checkbox"] {
-  position: relative;
-  vertical-align: middle;
-  border: none;
-  background: none;
-  width: 18px;
-  height: 18px;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: url('../img/icons/checkbox-unchecked.png') no-repeat center center/contain;
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+  + label {
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 1.3;
+    &:before {
+      width: 18px;
+      height: 18px;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: url('../img/icons/checkbox-unchecked.png') no-repeat center center/contain;
+    }
   }
-  &:checked:before {
-    background-image: url('../img/icons/checkbox-checked.png');
+  &:checked {
+    + label:before {
+      background-image: url('../img/icons/checkbox-checked.png');
+    }
+  }
+}
+
+input[type="radio"] {
+  + label {
+    &:before {
+      background: url('../img/icons/radio-unchecked.png') no-repeat center center/contain;
+    }
+  }
+  &:checked {
+    + label:before {
+      background-image: url('../img/icons/radio-checked.png');
+    }
   }
 }
