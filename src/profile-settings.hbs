@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> scripts title='Profile settings' }}
+  </head>
+  <body>
+    {{> header }}
+    <div class="profile-settings wrapper clear">
+      <div class="sidebar">
+        <div class="heading-2">
+          Profil
+        </div>
+        <nav class="sidebar-menu">
+          <div class="menu-item">
+            <a href="#">Persönliche Daten ändern</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Profilinformationen</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Bestätigte Daten</a>
+          </div>
+        </nav>
+
+        <div class="heading-2">
+          Einstellungen
+        </div>
+        <nav class="sidebar-menu">
+          <div class="menu-item">
+            <a href="#" class="active">Benachrichtigungen</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Zahlungsarten</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Auszahlungspräferenzen</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Zahlungsübersicht</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Kontoneinstellungen</a>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="settings-section">
+          <div class="heading-2">
+            Benachrichtigungen
+          </div>
+          <div class="description">
+            Erhalte Nachrichten von Mitgliedern.
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-email-1" />
+              <label for="setting-email-1">E-Mail</label>
+            </div>
+            <div class="setting">
+              <input type="checkbox" id="setting-sms-1" />
+              <label for="setting-sms-1">SMS</label>
+            </div>
+            <div class="setting">
+              <input type="checkbox" id="setting-push" />
+              <label for="setting-push">Push-Benachrichtigungen</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <div class="heading-2">
+            Kontaktdaten
+          </div>
+          <div class="description">
+            Diese Daten benötigen wir um dich kontaktieren und bei einem erfolgreichen Match den Kontakt mit deinem Companion herstellen zu können.
+          </div>
+          <div class="settings text-small">
+            <div class="setting clear">
+              <div class="left">
+                Telefonnummer:
+              </div>
+              <div class="right">
+                <a href="tel:">+49 *** **** 871</a>
+              </div>
+            </div>
+            <div class="setting clear">
+              <div class="left">
+                E-Mail:
+              </div>
+              <div class="right">
+                <a href="mailto:mustermann@gmail.com">mustermann@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <div class="heading-2">
+            Newsletter
+          </div>
+          <div class="description">
+            Erhalte Neuigkeiten rund um Companion2go
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-email-2" />
+              <label for="setting-email-2">E-Mail</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <div class="heading-2">
+            Erinnerungen und Vorschläge
+          </div>
+          <div class="description">
+            Solltest du einmal eine Nachricht übersehen haben, erinnern wir dich gerne.
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-email-3" />
+              <label for="setting-email-3">E-Mail</label>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-sms-3" />
+              <label for="setting-sms-3">SMS</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <div class="heading-2">
+            Erinnerungen und Vorschläge
+          </div>
+          <div class="description">
+            Solltest du einmal eine Nachricht übersehen haben, erinnern wir dich gerne.
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-email-4" />
+              <label for="setting-email-4">E-Mail</label>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="setting">
+              <input type="checkbox" id="setting-sms-4" />
+              <label for="setting-sms-4">SMS</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> footer }}
+  </body>
+</html>
