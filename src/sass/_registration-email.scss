@@ -2,11 +2,11 @@
   .popup {
     margin-top: 75px;
     width: 940px;
-    height: 499px;
+    height: auto;
     padding: 31px 79px 51px 79px;
     color: $violet-color;
     .register-form {
-      padding: 40px 81px 46px 81px;
+      padding: 40px 81px 0 81px;
       .column {
         width: 298px;
         float: left;

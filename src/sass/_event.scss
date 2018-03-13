@@ -24,7 +24,9 @@
       content: '';
       width: 102px;
       height: 43px;
-      background: url('label.png') no-repeat left top/contain;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
       z-index: 0;
     }
     a {
