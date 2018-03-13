@@ -85,7 +85,7 @@
             cursor: pointer;
             user-select: none;
             &:before {
-              background-image: url('../img/interests/checkbox-unchecked.png');
+              background-image: url('../img/icons/checkbox-unchecked.png');
               width: 36px;
               height: 36px;
               right: 12px;
@@ -106,7 +106,7 @@
             + label {
               text-shadow: 1px 1px 5px $black-color;
               &:before {
-                background-image: url('../img/interests/checkbox-checked.png');
+                background-image: url('../img/icons/checkbox-checked.png');
               }
               + .picture {
                 filter: none;
@@ -124,7 +124,7 @@
           background: linear-gradient(to right, transparent , $red-color);
         }
         .label {
-          background-image: url('../img/interests/cinema-label.png');
+          background-image: url('../img/icons/cinema-label.png');
         }
         .overlay {
           background-color: $red-color;
@@ -136,7 +136,7 @@
           background: linear-gradient(to right, transparent , $green-color);
         }
         .label {
-          background-image: url('../img/interests/journey-label.png');
+          background-image: url('../img/icons/journey-label.png');
         }
         .overlay {
           background-color: $green-color;
@@ -148,7 +148,7 @@
           background: linear-gradient(to right, transparent , $brown-color);
         }
         .label {
-          background-image: url('../img/interests/sport-label.png');
+          background-image: url('../img/icons/sport-label.png');
         }
         .overlay {
           background-color: $brown-color;
@@ -160,7 +160,7 @@
           background: linear-gradient(to right, transparent , $orrange-color);
         }
         .label {
-          background-image: url('../img/interests/misc-label.png');
+          background-image: url('../img/icons/misc-label.png');
         }
         .overlay {
           background-color: $orrange-color;

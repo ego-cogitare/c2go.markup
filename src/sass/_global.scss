@@ -198,12 +198,15 @@ html {
   width: 100vw;
   height: 100vh;
   .popup {
+    color: $violet-color;
     background-color: $white-color;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     position: relative;
+    margin-top: 75px;
     margin-left: 50%;
     transform: translateX(-50%);
     z-index: 999;
+    padding: 31px 79px 51px 79px;
     .close {
       position: absolute;
       display: block;
