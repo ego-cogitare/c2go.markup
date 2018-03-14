@@ -85,7 +85,7 @@
             cursor: pointer;
             user-select: none;
             &:before {
-              background-image: url('../img/icons/checkbox-unchecked.png');
+              background-image: url('../img/interests/checkbox-unchecked.png');
               width: 36px;
               height: 36px;
               right: 12px;
@@ -106,7 +106,7 @@
             + label {
               text-shadow: 1px 1px 5px $black-color;
               &:before {
-                background-image: url('../img/icons/checkbox-checked.png');
+                background-image: url('../img/interests/checkbox-checked.png');
               }
               + .picture {
                 filter: none;
