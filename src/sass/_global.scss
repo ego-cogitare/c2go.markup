@@ -3,10 +3,16 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   font-size: 14px;
   font-family: 'SofiaPro';
   color: $violet-color;
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 .hidden {
