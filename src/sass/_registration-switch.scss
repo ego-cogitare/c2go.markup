@@ -2,6 +2,10 @@
   .register-options {
     margin-top: 56px;
     margin-bottom: 57px;
+    .violet-button {
+      margin: 0 auto 17.3px;
+      width: 300px;
+    }
     .btn {
       margin: 0 auto 17.3px;
       width: 300px;
@@ -11,14 +15,15 @@
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
       border-style: solid;
       border-width: 1px;
-      border-image-source: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
-      color: $white-color;
       font-size: 1.1428rem;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
       letter-spacing: 0.3px;
       position: relative;
+      border-image-source: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0));
+      color: $white-color;
+      transition: all 0.3s 0.0s;
       &:before {
         display: block;
         position: absolute;
@@ -36,7 +41,6 @@
       }
       &:hover {
        text-decoration: none;
-       box-shadow: 0px 0px 12px 6px rgba(64, 128, 255, 0.3);
       }
       &.facebook {
         background-color: #3b579d;
@@ -52,9 +56,6 @@
           width: 22px;
           left: 18px;
         }
-      }
-      &.email {
-        background-color: $violet-color;
       }
     }
   }

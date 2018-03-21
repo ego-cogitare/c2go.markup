@@ -1,0 +1,29 @@
+.register-avatar {
+  padding: 96px 0 60px;
+  .heading-2 {
+    padding-bottom: 24px;
+  }
+  .avatar {
+    padding: 36px 0 32px;
+    img {
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+    }
+  }
+  .text {
+    padding: 13px 0;
+  }
+  .buttons {
+    .violet-button,
+    .violet-button-inverse {
+      width: 100%;
+    }
+  }
+  .skip {
+    font-weight: bold;
+    font-size: 1.4285rem;
+    margin-top: 32px;
+    display: block;
+  }
+}

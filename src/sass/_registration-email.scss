@@ -36,16 +36,7 @@
       input[type="checkbox"] {
         margin: -4px 10px 0 0;
       }
-      .btn {
-        color: $white-color;
-        font-weight: 500;
-        font-size: 1.1428rem;
-        background-color: $violet-color;
-        width: 220px;
-        height: 55px;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
-        border-radius: 100px;
-        border: none;
+      .violet-button {
         margin-right: -80px;
       }
     }

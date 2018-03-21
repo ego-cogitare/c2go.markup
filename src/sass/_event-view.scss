@@ -65,25 +65,8 @@
           }
           .buttons {
             padding-top: 33px;
-            a {
-              line-height: 52px;
-              font-size: 1.2857rem;
-            }
             .accept {
-              transition: all 0.3s 0.0s;
-              background-color: $violet-color;
-              border-radius: 100px;
-              width: 220px;
-              height: 54px;
-              color: $white-color;
-              border: 1px solid $violet-color;
               float: right;
-              &:hover {
-                border: 1px solid $violet-color;
-                text-decoration: none;
-                color: $violet-color;
-                background-color: transparent;
-              }
             }
             .decline {
               float: left;

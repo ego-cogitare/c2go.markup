@@ -186,6 +186,11 @@ html {
   margin: 0 auto;
 }
 
+.wrapper-small {
+  width: 460px;
+  margin: 0 auto;
+}
+
 .btn {
   display: block;
   background: none;
@@ -199,6 +204,50 @@ html {
   text-decoration: none;
   padding: 0 15px;
   user-select: none;
+}
+
+.violet-button {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 15px;
+  user-select: none;
+  transition: all 0.3s 0.0s;
+  background-color: $violet-color;
+  width: 220px;
+  height: 56px;
+  line-height: 56px;
+  color: $white-color;
+  border: 1px solid $violet-color;
+  border-radius: 100px;
+  font-size: 1.1428rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  &:hover {
+    background-color: $white-color;
+    color: $violet-color;
+    text-decoration: none;
+  }
+}
+
+.violet-button-inverse {
+  @extend .violet-button;
+  background-color: $white-color;
+  color: $violet-color;
+  &:hover {
+    background-color: $violet-color;
+    color: $white-color;
+  }
+}
+
+.text {
+  font-size: 1.1428rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 
 .popup-wrapper {
@@ -251,6 +300,12 @@ html {
           transform: rotate(360deg);
         }
       }
+    }
+    p {
+      font-size: 1.1428rem;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
     }
   }
   &.opened {
