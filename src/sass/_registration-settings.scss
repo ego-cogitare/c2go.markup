@@ -1,0 +1,53 @@
+.register-settings {
+  padding: 96px 0 130px;
+  .heading-2 {
+    padding-bottom: 24px;
+    font-size: 1.9rem;
+  }
+  .section-title {
+    font-weight: bold;
+    font-size: 1.1428rem;
+    text-align: left;
+    margin: 25px 0 20px 0;
+  }
+  .settings-section {
+    text-align: left;
+    font-size: 1.1428rem;
+    margin-bottom: 60px;
+    .setting {
+      margin-bottom: 10px;
+    }
+  }
+  .notice-title {
+    opacity: 0.3;
+    color: $violet-color;
+    font-size: 0.9285rem;
+    text-align: left;
+  }
+  .notice {
+    text-align: left;
+    height: 75px;
+    border-bottom: 2px solid $blue-color;
+    font-size: 1.1428rem;
+    line-height: 1.44;
+    margin-top: 6px;
+  }
+  .chars-left {
+    text-align: right;
+    color: $gray-color;
+    font-size: 0.8571rem;
+    padding-top: 8px;
+  }
+  .buttons {
+    margin-top: 44px;
+    .violet-button {
+      width: 100%;
+    }
+    .skip {
+      font-weight: bold;
+      font-size: 1.4285rem;
+      margin-top: 32px;
+      display: block;
+    }
+  }
+}

@@ -6,12 +6,10 @@
     text-align: center;
   }
   .text {
-    color: $violet-color;
     text-align: center;
-    font-size: 1.07rem;
   }
   .sections {
-    padding: 68px 0;
+    padding: 28px 0 41px;
     .section {
       padding: 5px 0 25px 0;
       position: relative;
@@ -56,7 +54,6 @@
           color: $white-color;
           letter-spacing: -0.2px;
           .picture {
-            filter: blur(1px);
             position: absolute;
             left: 0;
             top: 0;
@@ -64,16 +61,6 @@
             height: 100%;
             background: transparent no-repeat center center/cover;
             transition: all 0.4s 0.0s;
-            .overlay {
-              position: absolute;
-              z-index: 1;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              opacity: 0.4;
-              transition: all 0.4s 0.0s;
-            }
           }
           label {
             width: 100%;
@@ -84,35 +71,31 @@
             position: relative;
             cursor: pointer;
             user-select: none;
+            text-shadow: 1px 1px 5px $black-color;
             &:before {
-              background-image: url('../img/interests/checkbox-unchecked.png');
-              width: 36px;
-              height: 36px;
+              content: '';
+              border: 2px solid $white-color;
+              background-color: transarent;
+              background-image: none;
+              width: 34px;
+              height: 34px;
               right: 12px;
               top: 23px;
               left: auto;
-            }
-            &:hover {
-              text-shadow: 1px 1px 5px $black-color;
-              + .picture {
-                filter: none;
-                .overlay {
-                  opacity: 0;
-                }
-              }
+              border-radius: 50%;
+              text-align: center;
+              line-height: 34px;
+              color: $violet-color;
+              text-shadow: none;
             }
           }
           input[type="checkbox"]:checked {
             + label {
-              text-shadow: 1px 1px 5px $black-color;
               &:before {
-                background-image: url('../img/interests/checkbox-checked.png');
-              }
-              + .picture {
-                filter: none;
-                .overlay {
-                  display: none;
-                }
+                background-color: $white-color;
+                background-image: none;
+                font-family: 'Fontawesome';
+                content: '\f00c';
               }
             }
           }
@@ -126,9 +109,6 @@
         .label {
           background-image: url('../img/icons/cinema-label.png');
         }
-        .overlay {
-          background-color: $red-color;
-        }
       }
       &.journey {
         background-color: $green-color;
@@ -137,9 +117,6 @@
         }
         .label {
           background-image: url('../img/icons/journey-label.png');
-        }
-        .overlay {
-          background-color: $green-color;
         }
       }
       &.sport {
@@ -150,9 +127,6 @@
         .label {
           background-image: url('../img/icons/sport-label.png');
         }
-        .overlay {
-          background-color: $brown-color;
-        }
       }
       &.misc {
         background-color: $orrange-color;
@@ -162,10 +136,13 @@
         .label {
           background-image: url('../img/icons/misc-label.png');
         }
-        .overlay {
-          background-color: $orrange-color;
-        }
       }
+    }
+  }
+  .buttons {
+    .violet-button {
+      margin: 0 auto 60px;
+      width: 458px;
     }
   }
 }

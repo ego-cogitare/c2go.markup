@@ -1,0 +1,23 @@
+.registration-complete {
+  padding-top: 28px;
+  .text {
+    margin: 20px 0;
+  }
+  .checkbox {
+    text-align: center;
+    padding: 30px 0 0;
+  }
+  .buttons {
+    margin-top: 40px;
+    .violet-button {
+      float: right;
+    }
+    .main-profile {
+      margin-right: 20px;
+      float: right;
+      line-height: 56px;
+      font-size: 1.1428rem;
+      font-weight: 500;
+    }
+  }
+}
