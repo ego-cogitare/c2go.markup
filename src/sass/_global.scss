@@ -235,6 +235,11 @@ body {
     color: $violet-color;
     text-decoration: none;
   }
+  &.disabled {
+    color: $gray-color;
+    background-color: #534263;
+    border: 1px solid $gray-color;
+  }
 }
 
 .violet-button-inverse {
