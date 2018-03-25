@@ -32,6 +32,22 @@ $(document).ready(function() {
     });
   }
 
+  /**
+   * Date picker
+   */
+  var $date = $('#birthdate').get(0);
+  if ($date)
+  {
+    var calendar = rome(
+      $date, {
+      time: false ,
+      inputFormat: 'DD.MM.YYYY',
+      weekdayFormat: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      dayFormat: 'D',
+      appendTo: $date.parentNode
+    });
+  }
+
 
   /**
    * Google places autocomplete

@@ -1,0 +1,53 @@
+.rd-container {
+  width: 100%;
+  border: none;
+  box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+  z-index: 100;
+  top: 0 !important;
+  left: 0 !important;
+  .rd-month {
+    button {
+      font-family: 'Fontawesome';
+      color: #000000;
+      opacity: 0.54;
+      font-size: 1.5rem;
+    }
+  }
+  .rd-back {
+    &:before {
+      content: '\f104';
+    }
+  }
+  .rd-next {
+    &:before {
+      content: '\f105';
+    }
+  }
+  .rd-days {
+    width: 100%;
+    .rd-days-row {
+      line-height: 2.2;
+    }
+  }
+  .rd-month-label {
+    line-height: 1.8;
+    font-size: 1.1428rem;
+    font-weight: bold;
+  }
+  .rd-day-body {
+    height: 29px;
+    font-size: 0.9285rem;
+    font-weight: 500;
+    width: 40px;
+    line-height: 0;
+    &.rd-day-selected {
+      color: $white-color;
+      background-color: $violet-color;
+      border-radius: 50%;
+    }
+    &.rd-day-prev-month,
+    &.rd-day-next-month {
+      visibility: hidden;
+    }
+  }
+}

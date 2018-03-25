@@ -10,6 +10,17 @@
       .form-controll {
         height: 48px;
         margin: 0 0 26px;
+        .rd-container {
+          position: relative !important;
+          left: 0 !important;
+          top: 0 !important;
+          z-index: 100;
+          width: 100%;
+          .rd-days {
+            margin: 0 auto;
+            width: 80%;
+          }
+        }
         .input {
           font-family: 'SofiaPro';
           width: 100%;
