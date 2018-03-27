@@ -115,7 +115,7 @@
         }
 
       }
-      &.from + .to + .date {
+      &.from + .to:not(.hidden) + .date {
         .rd-container {
           .rd-day-body {
             height: 22px;

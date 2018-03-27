@@ -15,27 +15,17 @@
     position: relative;
     color: $white-color;
     padding: 8px 12px;
-    text-shadow: 1px 1px 5px #000000;
-    &:before {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: '';
-      width: 102px;
-      height: 43px;
-      background-repeat: no-repeat;
-      background-position: left top;
-      background-size: contain;
-      z-index: 0;
-      mask: url('../img/event/cloud-mask.svg') no-repeat left top;
-      -webkit-mask: url('../img/event/cloud-mask.svg') no-repeat left top;
-      mask-size: contain;
-      -webkit-mask-size: contain;
-    }
+    text-shadow: 1px 1px 5px $black-color;
     a {
       color: inherit;
       text-decoration: none;
+    }
+    .label {
+      position: absolute;
+      left: -1px;
+      top: 0;
+      width: 102px;
+      height: 43px;
     }
     .event-category {
       font-size: 1.286rem;
@@ -48,6 +38,9 @@
       font-size: 2.0rem;
       font-weight: 500;
       padding-top: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .author-avatar {
       position: absolute;
@@ -63,10 +56,6 @@
         object-fit: cover;
       }
     }
-  }
-  &.video .picture:before {
-    background-color: $green-color;
-
   }
   .details {
     height: 96px;
