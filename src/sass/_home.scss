@@ -47,6 +47,20 @@
           }
         }
       }
+      &.single-category {
+        @extend .wrapper;
+        float: none;
+        padding-left: 17px;
+        .events {
+          white-space: initial;
+          display: block;
+          .event {
+            float: left;
+            display: block;
+            margin-bottom: 8px;
+          }
+        }
+      }
     }
   }
 }
