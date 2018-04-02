@@ -1,0 +1,43 @@
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  letter-spacing: -2px;
+  font-size: 20px;
+  .progress {
+    display: none;
+  }
+  > span {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    &.fix,
+    &:hover {
+      ~ span:before,
+      &:before {
+        content: "\2605";
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  &.percentage {
+    pointer-events: none;
+    position: relative;
+    direction: ltr;
+    display: inline-block;
+    .progress {
+      display: block;
+      letter-spacing: -1.6px;
+      position: absolute;
+      top: -1.6px;
+      left: -1.0px;
+      direction: ltr;
+      overflow: hidden;
+      font-size: 23px;
+      &:before {
+        content: "\2605\2605\2605\2605\2605";
+      }
+    }
+  }
+}

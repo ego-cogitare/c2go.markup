@@ -1,0 +1,22 @@
+.event-proposals {
+  .proposals-wrapper {
+    .event-general {
+      .textarea-wrapper {
+        padding-bottom: 32px;
+      }
+      .buttons {
+        line-height: 56px;
+        padding-bottom: 60px;
+        .next {
+          float: right;
+        }
+        .cancel {
+          font-weight: bold;
+          float: right;
+          font-size: 1.1428rem;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

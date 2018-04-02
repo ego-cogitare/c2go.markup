@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> scripts title='Event proposal' }}
+  </head>
+  <body>
+    {{> header }}
+    <div class="event-proposals">
+      {{> event-cover picture="img/covers/cinema.jpg" title="Blade Runner 2049"}}
+
+      <div class="proposals-wrapper clear" style="background-color: #ffffff">
+        
+        <div class="proposal-section wrapper">
+          <div class="heading-1">Frankfurt, im Metropolis 12.11.17</div>
+          <div class="proposal-details clear">
+            <div class="profile-photo">
+              <div class="heading-2">
+                Anbieter/in
+              </div>
+              <div class="picture" style="background-image: url(img/home/avatar-01.png)">
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="info">
+                <div class="heading-2">
+                  Profil
+                </div>
+                <p class="text">
+                  Tina, 26 Jahre, Aus Marburg
+                </p>
+                <p class="text">
+                  Sprachen: Englisch, Deutsch, Französisch
+                </p>
+                <p class="text">
+                  Hat eine Sehbehinderung.
+                </p>
+              </div>
+              <div class="description">
+                <div class="heading-2">
+                  Hallo ich bin Tina…
+                </div>
+                <p class="text">
+                  ich möchte am 30.10.17 das Theaterstück "Ich, ein Anfang" in Wetzlar
+                  im Kellertheater sehen. Hast du auch Lust auf ein witziges und modernes
+                  Theaterstück? Schreibe mir einfach ein paar Informationen über dich und
+                  vielleicht sehen wir uns dann bereits in 2 Wochen in dem Theater.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="reviews">
+            <div class="title clear">
+              <div class="heading-2">
+                Bewertungen
+              </div>
+              <div class="star" data-count="5"></div>
+            </div>
+            <div class="review clear">
+              <div class="avatar-rating clear">
+                <div class="avatar">
+                  <a href="#">
+                    <img src="img/home/avatar-01.png" alt="User" />
+                  </a>
+                </div>
+                {{> rating progress="30%" type="percentage" }}
+              </div>
+              <div class="text user-name">
+                Mohammed
+              </div>
+              <div class="text">
+                Wirklich nette und unterhaltsame Begleitperson. War von Beginn an hilfsbereit und offen.
+              </div>
+            </div>
+            <div class="review clear">
+              <div class="avatar-rating clear">
+                <div class="avatar">
+                  <a href="#">
+                    <img src="img/home/avatar-02.png" alt="User" />
+                  </a>
+                </div>
+                {{> rating progress="80%" type="percentage" }}
+              </div>
+              <div class="text user-name">
+                Mohammed
+              </div>
+              <div class="text">
+                Wirklich nette und unterhaltsame Begleitperson. War von Beginn an hilfsbereit und offen.
+              </div>
+            </div>
+            <div class="violet-button-inverse show-more">
+              Mehr
+            </div>
+          </div>
+          <div class="buttons clear">
+            <div class="violet-button right">
+              Anfragen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> footer }}
+  </body>
+</html>

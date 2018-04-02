@@ -1,0 +1,23 @@
+.textarea-wrapper {
+  .textarea-title {
+    opacity: 0.3;
+    color: $violet-color;
+    font-size: 0.9285rem;
+    text-align: left;
+  }
+  .textarea {
+    text-align: left;
+    height: 75px;
+    border-bottom: 2px solid $blue-color;
+    font-size: 1.1428rem;
+    line-height: 1.44;
+    margin-top: 6px;
+    overflow: auto;
+  }
+  .textarea-chars-left {
+    text-align: right;
+    color: $gray-color;
+    font-size: 0.8571rem;
+    padding-top: 8px;
+  }
+}

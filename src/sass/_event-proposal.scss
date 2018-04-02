@@ -1,0 +1,81 @@
+.event-proposals {
+  .proposals-wrapper {
+    .proposal-section {
+      position: relative;
+      .proposal-details {
+        padding-top: 45px;
+        .heading-2 {
+          padding-bottom: 16px;
+        }
+        .info {
+          .text {
+            line-height: 28px;
+          }
+        }
+        .description {
+          padding-top: 20px;
+        }
+        .profile-photo {
+          float: left;
+          .picture {
+            @extend .normalize-bg;
+            width: 300px;
+            height: 220px;
+          }
+        }
+        .profile-details {
+          float: right;
+          width: calc(100% - 320px);
+        }
+      }
+      .hr {
+        margin: 25px 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+      }
+      .reviews {
+        .title {
+          .heading-2 {
+            float: left;
+          }
+          .star {
+            float: right;
+          }
+        }
+        .review {
+          margin: 15px 0 30px;
+          .avatar {
+            float: left;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.3);
+            img {
+              object-fit: cover;
+              max-width: 100%;
+              max-height: 100%;
+              min-width: 100%;
+              min-height: 100%;
+            }
+          }
+          .user-name {
+            font-weight: bold;
+            padding-top: 10px;
+          }
+          .rating {
+            float: right;
+            margin-top: 17px;
+          }
+        }
+        .show-more {
+          width: 80px;
+          height: 36px;
+          line-height: 36px;
+        }
+      }
+      .buttons {
+        padding: 30px 0 60px;
+      }
+    }
+  }
+}

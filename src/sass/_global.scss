@@ -37,6 +37,13 @@ body {
   background: none !important;
 }
 
+.normalize-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
 .no-margin {
   margin: 0 !important;
 }
