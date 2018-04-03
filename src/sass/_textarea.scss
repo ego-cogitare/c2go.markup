@@ -13,6 +13,13 @@
     line-height: 1.44;
     margin-top: 6px;
     overflow: auto;
+    resize: none;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: inherit;
+    font-size: 1.0rem;
   }
   .textarea-chars-left {
     text-align: right;
