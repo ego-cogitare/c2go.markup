@@ -20,9 +20,8 @@
         height: 100%;
         left: 0;
         top: 0;
-        &:before {
+        .gradient {
           position: absolute;
-          content: '';
           left: 0;
           top: 0;
           width: 320px;
@@ -39,6 +38,14 @@
         position: relative;
         z-index: 1;
         background: transparent no-repeat left top;
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 137px;
+          height: 94px;
+          z-index: -1;
+        }
       }
       .items {
         width: calc(100% - 170px);
@@ -99,42 +106,6 @@
               }
             }
           }
-        }
-      }
-      &.cinema {
-        background-color: $red-color;
-        .cover:before {
-          background: linear-gradient(to right, transparent , $red-color);
-        }
-        .label {
-          background-image: url('../img/icons/cinema-label.png');
-        }
-      }
-      &.journey {
-        background-color: $green-color;
-        .cover:before {
-          background: linear-gradient(to right, transparent , $green-color);
-        }
-        .label {
-          background-image: url('../img/icons/journey-label.png');
-        }
-      }
-      &.sport {
-        background-color: $brown-color;
-        .cover:before {
-          background: linear-gradient(to right, transparent , $brown-color);
-        }
-        .label {
-          background-image: url('../img/icons/sport-label.png');
-        }
-      }
-      &.misc {
-        background-color: $orrange-color;
-        .cover:before {
-          background: linear-gradient(to right, transparent , $orrange-color);
-        }
-        .label {
-          background-image: url('../img/icons/misc-label.png');
         }
       }
     }
