@@ -217,6 +217,8 @@ body {
   text-decoration: none;
   padding: 0 15px;
   user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .violet-button {

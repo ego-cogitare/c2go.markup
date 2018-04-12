@@ -45,8 +45,8 @@
         }
       }
       .user-info {
-        margin-left: 103px;
-        float: left;
+        float: right;
+        width: calc(100% - 612px);
         .ttl {
           font-weight: 500;
           font-size: 1.4285rem;
