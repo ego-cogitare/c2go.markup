@@ -48,6 +48,18 @@ $(document).ready(function() {
     });
   }
 
+  /**
+   * Time picker
+   */
+  $('#time').wickedpicker({
+    twentyFour: true,
+    title: 'Uhrzeit',
+    minutesInterval: 1,
+    beforeShow: function($input, picker) {
+      console.log(picker)
+      $(picker).width($input.width() + 1);
+    }
+  });
 
   /**
    * Google places autocomplete
