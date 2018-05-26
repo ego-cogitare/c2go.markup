@@ -11,9 +11,7 @@
         float: left;
         width: 170px;
         height: 170px;
-        border-radius: 50%;
-        border: 2px solid $violet-color;
-        background: url('../img/dashboard/empty-avatar.png') no-repeat center center/cover;
+        border-width: 2px;
       }
       .profile-actions {
         margin-left: 70px;
@@ -80,10 +78,7 @@
         width: 64px;
         height: 64px;
         margin: 10px 15px 0 0;
-        background: url('../img/dashboard/empty-avatar.png') no-repeat center center/cover;
-        border: 1px solid $violet-color;
-        border-radius: 50%;
-        position: relative;
+        border-width: 1px;
         &:before {
           content: '';
           display: block;

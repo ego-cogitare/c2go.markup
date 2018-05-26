@@ -354,6 +354,14 @@ body {
   }
 }
 
+.avatar {
+  position: relative;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: $violet-color;
+  background: url('../img/dashboard/empty-avatar.png') no-repeat center center/cover;
+}
+
 a {
   color: inherit;
   text-decoration: none;
