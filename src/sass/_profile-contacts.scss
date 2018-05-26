@@ -1,0 +1,53 @@
+.profile-contacts {
+  padding: 60px 0 40px 0;
+  .popup {
+    .popup-body {
+      padding-top: 20px;
+      .violet-button {
+        height: 32px;
+        line-height: 32px;
+        width: 50%;
+        margin: 20px auto 0;
+      }
+    }
+  }
+  .content {
+    .table {
+      &.email-phone {
+        margin-bottom: 48px;
+      }
+      .table-row {
+        .with-icon {
+          position: relative;
+          padding-left: 30px;
+          &:before {
+            content: '';
+            display: block;
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -2px;
+            top: -2px;
+          }
+          &.icon-success:before {
+            background-image: url('../img/icons/checkbox-small.png');
+          }
+          &.icon-attention:before {
+            background-image: url('../img/icons/attention.png');
+          }
+          &.icon-plus-red:before {
+            background-image: url('../img/icons/plus-red.png');
+            cursor: pointer;
+          }
+          &.icon-plus-violet:before {
+            background-image: url('../img/icons/plus-violet.png');
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

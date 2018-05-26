@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> scripts title='Profile contacts settings' }}
+  </head>
+  <body>
+    {{> header }}
+    <div class="profile-contacts wrapper clear">
+
+      <div class="popup-wrapper opened">
+        <div class="popup popup-sm">
+          <i class="close"></i>
+          <div class="heading-2">Enter e-mail adress</div>
+          <div class="popup-body">
+            <form action="">
+              <div class="form-controll">
+                <input type="text" class="input" name="email" value="" placeholder="E-Mail-Adresse" autofocus />
+              </div>
+              <div class="form-controll">
+                <input type="submit" class="violet-button" name="email" value="Confirm" placeholder="E-Mail-Adresse" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        {{> sidebar-menu }}
+      </div>
+      <div class="content">
+        <div class="heading-2">
+          Bestätigte Daten
+        </div>
+        <div class="table email-phone">
+          <div class="table-row clear">
+            <div class="left with-icon icon-success">
+              E-Mail-Adresse
+            </div>
+            <div class="right">
+              <a href="#">
+                <img src="img/icons/trash.png" alt="Trash" />
+              </a>
+            </div>
+          </div>
+          <div class="table-row clear">
+            <div class="left with-icon icon-plus-red">
+              Telefonnummer
+            </div>
+            <div class="right">
+              <a href="#">
+                <img src="img/icons/attention.png" alt="Attention" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="heading-2">
+          Verknüpfungen
+        </div>
+        <div class="table">
+          <div class="table-row clear">
+            <div class="left with-icon icon-success">
+              Facebook
+            </div>
+            <div class="right">
+              <a href="#">
+                <img src="img/icons/trash.png" alt="Trash" />
+              </a>
+            </div>
+          </div>
+          <div class="table-row clear">
+            <div class="left with-icon icon-plus-violet">
+              Google
+            </div>
+            <div class="right">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> footer }}
+  </body>
+</html>

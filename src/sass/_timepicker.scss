@@ -1,0 +1,55 @@
+.wickedpicker {
+  box-shadow: 0 24px 24px 0 rgba(0, 0, 0, 0.3), 0 0 24px 0 rgba(0, 0, 0, 0.22);
+  height: 237px;
+  margin-top: -78px;
+  color: $violet-color;
+  .wickedpicker__title {
+    color: $violet-color;
+    background: none;
+    border-bottom: none;
+    line-height: 1.8;
+    font-size: 1.1428rem;
+    font-weight: bold;
+    .wickedpicker__close {
+      display: none;
+    }
+  }
+  .wickedpicker__controls {
+    .wickedpicker__controls__control--separator {
+      width: 34%;
+      .wickedpicker__controls__control--separator-inner {
+        font-size: 2.0rem;
+        line-height: 17px;
+      }
+    }
+    .wickedpicker__controls__control {
+      .wickedpicker__controls__control-up,
+      .wickedpicker__controls__control-down {
+        &:before {
+          background: url('../img/icons/arrow.svg') no-repeat center center;
+          content: '';
+          display: block;
+          width: 32px;
+          height: 32px;
+          transform: rotate(90deg);
+        }
+        &:after {
+          content: '';
+          display: none;
+        }
+      }
+      .wickedpicker__controls__control-down {
+        &:before {
+          transform: rotate(270deg);
+        }
+      }
+      .wickedpicker__controls__control--minutes,
+      .wickedpicker__controls__control--hours {
+        font-size: 2.0rem;
+        height: 80px;
+        line-height: 80px;
+        outline: none;
+      }
+    }
+  }
+}
