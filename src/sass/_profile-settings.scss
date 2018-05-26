@@ -49,6 +49,12 @@
           font-size: 1.0rem;
           margin: 0 5px 5px 0;
           float: left;
+          transition: all 0.3s 0.0s;
+          &:hover {
+            text-decoration: none;
+            background-color: $violet-color;
+            color: $white-color;
+          }
         }
       }
     }
