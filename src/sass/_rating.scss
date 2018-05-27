@@ -1,23 +1,31 @@
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
-  letter-spacing: -2px;
+  letter-spacing: 1.0px;
+  display: inline-block;
   font-size: 20px;
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
   .progress {
     display: none;
   }
   > span {
-    display: inline-block;
+    display: block;
     position: relative;
-    font-weight: 700;
     cursor: pointer;
-    &.fix,
-    &:hover {
-      ~ span:before,
-      &:before {
-        content: "\2605";
-        position: absolute;
-        left: 0;
+    float: right;
+    &:before {
+      display: block;
+      content: '\F006';
+      font-family: Fontawesome;
+      letter-spacing: 1px;
+    }
+    &.fix, &:hover {
+      ~ span:before, &:before {
+        content: "\F005";
       }
     }
   }
@@ -28,15 +36,15 @@
     display: inline-block;
     .progress {
       display: block;
-      letter-spacing: -1.6px;
+      letter-spacing: 1.0px;
       position: absolute;
-      top: -1.6px;
-      left: -1.0px;
+      top: -0.4px;
+      left: 0.3px;
       direction: ltr;
       overflow: hidden;
-      font-size: 23px;
+      font-family: 'Fontawesome';
       &:before {
-        content: "\2605\2605\2605\2605\2605";
+        content: "\F005\F005\F005\F005\F005";
       }
     }
   }
