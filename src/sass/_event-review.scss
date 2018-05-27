@@ -1,8 +1,29 @@
-.event-review-total {
+.event-review {
+  .wrapper-small {
+    padding-bottom: 60px;
+  }
   .rating {
     margin-top: 50px;
     span {
       font-size: 4.0rem;
+      padding: 0 16px 0 0;
+    }
+  }
+  .categories {
+    .rating {
+      margin-top: 24px;
+      margin-bottom: 45px;
+    }
+    .category {
+      float: left;
+      width: 50%;
+      .heading-4 {
+        text-align: left;
+        padding-left: 45px;
+      }
+    }
+    + .wrapper-small {
+      padding-top: 10px;
     }
   }
 }

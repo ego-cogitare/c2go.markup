@@ -180,6 +180,12 @@ body {
   line-height: 1.17;
 }
 
+.heading-4 {
+  @extend .heading-x;
+  font-size: 1.4285rem;
+  letter-spacing: normal;
+}
+
 .no-scroll {
   overflow: hidden;
 }
