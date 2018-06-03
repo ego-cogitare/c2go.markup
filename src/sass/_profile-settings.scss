@@ -57,6 +57,22 @@
           }
         }
       }
+      .form-row {
+        margin-bottom: 43px;
+        .form-controll {
+          width: 48.5%;
+        }
+        &.postamp {
+          .form-controll {
+            &:first-child {
+              width: 40%;
+            }
+            &:last-child {
+              width: 57%;
+            }
+          }
+        }
+      }
     }
   }
 }

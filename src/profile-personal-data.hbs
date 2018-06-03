@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> scripts title='Personal data' }}
+  </head>
+  <body>
+    {{> header }}
+    <div class="profile-settings wrapper clear">
+      <div class="sidebar">
+        {{> sidebar-menu }}
+      </div>
+      <div class="content">
+        <div class="settings-section">
+          <div class="heading-2">
+            Persönliche Daten
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <form action="">
+            <div class="form-row clear">
+              <div class="form-controll left">
+                <input type="text" class="input" value="Abbrechen" />
+              </div>
+              <div class="form-controll right">
+                <input type="text" class="input" value="Wittmann" />
+              </div>
+            </div>
+            <div class="form-row clear">
+              <div class="form-controll left">
+                <input type="text" class="input" value="01.01.1989" />
+              </div>
+              <div class="form-controll right">
+                <input type="text" class="input" value="wittmann@companion2go.de" />
+              </div>
+            </div>
+            <div class="form-row clear postamp">
+              <div class="form-controll left">
+                <input type="text" class="input" value="35037" />
+              </div>
+              <div class="form-controll right">
+                <input type="text" class="input" value="Marburg" />
+              </div>
+            </div>
+            <div class="form-row clear">
+              <div class="form-controll">
+                <input type="text" class="input" value="Telefonnummer" />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="settings-section">
+          <a href="#" class="edit">Daten ändern</a>
+        </div>
+
+        <div class="settings-section clear">
+          <a href="#" class="edit left">Abbrechen</a>
+          <a href="#" class="violet-button right">Speichern</a>
+        </div>
+
+      </div>
+    </div>
+    {{> footer }}
+  </body>
+</html>
