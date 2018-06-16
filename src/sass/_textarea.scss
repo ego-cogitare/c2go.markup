@@ -4,6 +4,8 @@
     color: $violet-color;
     font-size: 0.9285rem;
     text-align: left;
+    position: relative;
+    z-index: -1;
   }
   .textarea {
     text-align: left;

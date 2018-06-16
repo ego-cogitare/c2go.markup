@@ -42,3 +42,18 @@
     }
   }
 }
+
+.adjustments-004 {
+  .form {
+    .row {
+      display: inline-block;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      input[type="radio"] + label {
+        padding-left: 23px;
+      }
+    }
+  }
+}

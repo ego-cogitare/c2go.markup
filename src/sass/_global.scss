@@ -76,6 +76,10 @@ body {
   width: 100% !important;
 }
 
+.wauto {
+  width: auto !important;
+}
+
 .h0 {
   height: 0;
 }
@@ -476,6 +480,40 @@ input[type="radio"] {
       font-size: 1.4285rem;
       margin-top: 32px;
       display: block;
+    }
+  }
+}
+
+.dropdown-item {
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: $violet-color;
+  font-weight: normal;
+  font-size: 1.07rem;
+  border: none;
+}
+
+.dropdown {
+  background-color: $white-color;
+  box-shadow: 0px 11px 11px 3px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  border-radius: 2px;
+  overflow: auto;
+  max-height: 294px;
+  &:empty {
+    display: none;
+  }
+  .item {
+    padding: 15px 5px 15px 28px;
+    @extend .dropdown-item;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $light-gray-color;
     }
   }
 }
