@@ -8,9 +8,8 @@
     margin-bottom: 20px;
   }
   .popup-body {
-    .input.disabled {
-      margin-bottom: 50px;
-      margin-top: 20px;
+    .form-controll {
+      padding-top: 35px;
     }
     .buttons {
       text-align: center;
@@ -55,5 +54,12 @@
         padding-left: 23px;
       }
     }
+  }
+}
+
+.adjustments-005 {
+  .dropdown {
+    top: 304px !important;
+    cursor: pointer;
   }
 }
