@@ -1,0 +1,41 @@
+.user-reviews {
+  .title {
+    .heading-2 {
+      float: left;
+    }
+    .star {
+      float: right;
+    }
+  }
+  .review {
+    margin: 15px 0 30px;
+    .avatar {
+      float: left;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.3);
+      img {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+    .user-name {
+      font-weight: bold;
+      padding-top: 10px;
+    }
+    .rating {
+      float: right;
+      margin-top: 17px;
+    }
+  }
+  .show-more {
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
