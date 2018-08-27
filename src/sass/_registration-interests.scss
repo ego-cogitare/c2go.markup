@@ -95,6 +95,16 @@
               color: $violet-color;
               text-shadow: none;
             }
+            .category-name {
+              display: block;
+              padding: 0;
+              margin: 0;
+              line-height: 80px;
+              width: calc(100% - 60px);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
           }
           input[type="checkbox"]:checked {
             + label {
